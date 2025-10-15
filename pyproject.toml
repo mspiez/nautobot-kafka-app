@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nautobot-kafka-app"
+version = "0.1.0"
+description = "custom napalm"
+authors = ["Michal Spiez <mspiez@gmail.com>"]
+license = "Apache-2.0"
+packages = [
+    { include = "nautobot_kafka_app" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+confluent_kafka = "2.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
